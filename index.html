@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js" defer></script>
+
+    </head>
+    <body>
+        <p>You play 5 rounds here ! After playing 5 rounds press reset</p>
+        <div class="container ">
+            <div onclick="transitionjs(this)" class="top rock">rock</div>
+            <div onclick="transitionjs(this)" class="top paper">paper</div>
+            <div onclick="transitionjs(this)" class="top scissors">scissors</div>
+        </div>
+        <div id="rockLi"></div>
+        <div id="paperLi"></div>
+        <div id="scissorsLi"></div>
+        <button class="btn" onclick="reset()">RESET</button>
+
+        <img id="humanSvg" class="toggled" src = "undraw_female_avatar_efig.svg" alt="HUMAN won"/>
+        <img id="compSvg" src="undraw_progressive_app_m-9-ms.svg" alt="Computer Won">
+        <img src="undraw_relaunch_day_902d.svg" alt="Tie!" id="tieSvg">
+        <div class="playerScore">
+            Player Score <br> <span id="playerScore">0</span>
+        </div>
+        <div class="compScore">
+            Comp Score <br> <span id="compScore">0</span>
+        </div>
+
+        <div class="resultDiv">
+            <h3>RESULT </h3>
+            <h5 id="won">You Won</h5>
+            <h5 id="lost">You Lost</h5>
+            <h5 id="tie">Tie</h5> 
+        </div>
+        
+    </body>
+    </html>
